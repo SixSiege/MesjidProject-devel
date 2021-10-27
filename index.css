@@ -242,3 +242,8 @@ align-self: center;
     font-size: 28px;
     font-weight: 100;
 }
+
+#footer-contacts a {
+    text-decoration: none;
+    color: inherit;
+}
