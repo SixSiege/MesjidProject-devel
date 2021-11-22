@@ -70,7 +70,6 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
-    float: right;
     justify-content: right;
     padding: 0;
     margin: 0;
@@ -202,14 +201,13 @@ margin: 0;
 }
 
 #footer-desc {
-width: 30%;
-color: #ffffff;
-font-family: "Open Sans Condensed";
-font-size: 3vh;
-font-weight: 700;
-text-align: left;
-align-self: center;
-
+    width: 30%;
+    color: #ffffff;
+    font-family: "Open Sans Condensed";
+    font-size: 3vh;
+    font-weight: 700;
+    text-align: left;
+    align-self: center;
 }
 
 #footer-contacts {
@@ -246,4 +244,76 @@ align-self: center;
 #footer-contacts a {
     text-decoration: none;
     color: inherit;
+}
+
+@media only screen and (max-width: 414px){ /*iPhone 6/7/8 */
+    #header-texts {
+        font-size: 2vh;
+        bottom: 2vh;
+        left: 3vw;
+        transform: translate(-2vh, 3vw);
+    }
+
+    #header-logo {
+        height: 15%;
+        bottom: 0.5vh;
+        right: 1vw;
+        transform: translate(0.5vh, -2vw);
+        padding: 0;
+        overflow: visible;
+    }
+    
+
+    .navbar-span ul {
+        justify-content: center;
+    }
+
+    .navbar-span li {
+        font-size: 2.8vh;
+        padding: 0.5vh 3vh;
+    }
+
+    .website-deskripsi{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 12%;
+        align-content: center;
+    }
+
+    .website-deskripsi img {
+        padding: 5% 0;
+    }
+
+    #aktivitas-mesjid{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: #6f9419;
+        border-radius: 20px;
+    }
+    
+    .website-imagesandcaption{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 2% 0;
+    }
+
+    .website-imagesandcaption p {
+        width: auto;
+    }
+    
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    #footer-desc,
+    #footer-desc p {
+        width: 100%;
+    }
+    
+    #footer-contacts {
+        width: 100%;
+    }
 }
