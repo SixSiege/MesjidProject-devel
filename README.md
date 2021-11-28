@@ -1,2 +1,2 @@
 # MesjidProject
-Website project for Mesjid Al-Ittihad, Rumbai
+Website project for Mesjid Al-Ittihad
