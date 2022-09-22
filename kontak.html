@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Team IRDC">
         <meta name="description" content="Project membuat Website resmi Mesjid Al-Ittihad">
-        <title>Mesjid Al-Ittihad, Rumbai</title>
+        <title>Tentang Mesjid Al-Ittihad</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header class="header h-index">
+        <header class="header h-tentang">
             <nav id="navbar">
                 <span class="navbar-span">
                     <ul>
@@ -26,36 +26,39 @@
             </nav>
             <div id="header-texts">
                 <h1>Mesjid Al-Ittihad</h1>
-                <h2>Komplek PHR</h2>
+                <h2>Kontak</h2>
             </div>
             <div id="header-logo">
                 <img src="img/logo_irdc.png" alt="Logo IRDC">
             </div>
         </header>
-        <h3 class="subbab">Laporan Keuangan Mesjid</h3>
-        <section id="laporan-mesjid">
-            <div class="keuangan-list">
-                <div class="item-keuangan">
-                    <h3>Mesjid</h3>
-                    <p>Rp. 45.000.000</p>
+        <section id="kontak-mesjid">
+            <h1>Kontak Kami</h1>
+            <div class="flex-kontak">
+                <div class="form-pesan">
+                    <form action="" method="get">
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="judul">Judul</label>
+                            <input type="text" name="title" id="title">
+                        </div>
+                        <div>
+                            <label for="desc">Deskripsi</label>
+                            <textarea name="desc" id="desc" cols="30" rows="10" name="desc"></textarea>
+                        </div>
+                        
+                    </form>
                 </div>
-                <div class="item-keuangan">
-                    <h3>Ukhuwah</h3>
-                    <p>Rp. 23.000.000</p>
-                </div>
-            </div>
-        </section>
-        <section id="layanan-mesjid">
-            <h3 class="subbab">Layanan Online Mesjid Al-Ittihad</h3>
-            <div class="flex-layanan">
-                <div class="layanan-item">
-                    <i class="bi-cash-stack"></i>
-                    <h4>Infaq Operasional Mesjid Al-Ittihad</h4>
-                </div>
-                
-                <div class="layanan-item">
-                    <i class="bi-box2-heart"></i>
-                    <h4>Infaq Ukhuwah dan Anak Yatim</h4>
+                <div class="peta-kontak">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6181552962003!2d101.43464575033202!3d0.5739274637347263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aca11dcab209%3A0xef2d5c739e51bfa0!2sMasjid%20Al%20Ittihad%20PT.%20Pertamina%20Hulu%20Rokan%20Rumbai!5e0!3m2!1sen!2ssg!4v1663401181892!5m2!1sen!2ssg" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <ul class="list-kontak">
+                        <li>Alamat: </li>
+                        <li>Telp: </li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
         </section>
