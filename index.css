@@ -1,3 +1,4 @@
+/* Website Settings */
 * {
     box-sizing: border-box;
 }
@@ -36,12 +37,36 @@ body {
     background-blend-mode: overlay;
 }
 
+.container-flex{
+    background-color: inherit;
+    padding: 2%;
+    display: inherit;
+    flex-direction: inherit;
+    align-content: inherit;
+    flex-wrap: inherit;
+    justify-content: inherit;
+}
+
+/* Header */
+/* Background Headers */
 .h-index {
-    background-image: linear-gradient(rgb(156, 156, 156), rgb(61, 61, 61)), url(img/pic_header.jpg);
+    background-image: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(100, 100, 100) 10%, rgb(100, 100, 100) 90%, rgb(32, 32, 32) 100%), url(img/pic_header_edit.jpg);
 }
 
 .h-tentang {
-    background-image: linear-gradient(rgb(156, 156, 156), rgb(61, 61, 61)), url(img/header_tentang.jpg);
+    background-image: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(100, 100, 100) 10%, rgb(100, 100, 100) 90%, rgb(32, 32, 32) 100%), url(img/header_tentang.jpg);
+}
+
+.h-murrotalkajian {
+    background-image: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(100, 100, 100) 10%, rgb(100, 100, 100) 90%, rgb(32, 32, 32) 100%), url(img/mesjid_ramadhan.jpg);
+}
+
+.h-ukhuwah {
+    background-image: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(100, 100, 100) 10%, rgb(100, 100, 100) 90%, rgb(32, 32, 32) 100%), url(img/mesjid_berbuka.JPG);
+}
+
+.h-kontak {
+    background-image: linear-gradient(90deg, rgb(32, 32, 32) 0%, rgb(100, 100, 100) 10%, rgb(100, 100, 100) 90%, rgb(32, 32, 32) 100%), url(img/header_kontak.jpg);
 }
 
 #header-texts {
@@ -71,6 +96,7 @@ body {
     height: 30%;
 }
 
+/* Navbar */
 #navbar {
     position: relative;
 }
@@ -95,13 +121,15 @@ text-align: center;
 letter-spacing: 1px;
 }
 
-.navbar-span a {
-    text-decoration: none;
-    color: white;
+.navbar-span li:hover {
+    text-decoration: underline;
 }
 
-#deskripsi-mesjid,
-#aktivitas-mesjid,
+.navbar-span a {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+}
+/* Sections (containter-flex, website-footer) */
 #container-flex,
 #website-footer {
     background-color: #8DB433;
@@ -109,6 +137,8 @@ letter-spacing: 1px;
     margin: 0;
 }
 
+
+/* Tentang Section */
 #deskripsi-mesjid p {
 color: #ffffff;
 font-family: "Open Sans Condensed";
@@ -142,56 +172,6 @@ text-align: justify;
     background-color: #6f9419;
     border-radius: 20px;
 }
-
-#aktivitas-mesjid img{
-    object-fit: cover;
-}
-
-.subbab {
-color: #ffffff;
-font-family: "Open Sans Condensed";
-font-size: 5vh;
-font-weight: 700;
-text-align: center;
-letter-spacing: 1px;
-padding: 2% 0;
-margin: 0;
-}
-
-.container-flex{
-    background-color: inherit;
-    padding: 2%;
-    display: inherit;
-    flex-direction: inherit;
-    align-content: inherit;
-    flex-wrap: inherit;
-    justify-content: inherit;
-}
-#laporan-mesjid > .keuangan-list{
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-evenly;
-    align-content: flex-end;
-    
-}
-
-.keuangan-list > .item-keuangan {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    font-size: x-large;
-    background-color: #4c6c01;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 15px;
-}
-
-.item-keuangan > h3 {
-    margin: 0;
-}
-
 
 .website-imagesandcaption{
     display: flex;
@@ -232,6 +212,75 @@ margin: 0;
     object-fit: cover;
 }
 
+/* Kajian dan Murrotal Section */
+.list-kajian,
+.list-murrotal{
+    padding: 2%;
+    margin: 2% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #6f9419;
+    border-radius: 20px;
+}
+
+.list-kajian > a,
+.list-murrotal > a{
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    background-color: #8DB433;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.list-kajian > a:hover,
+.list-murrotal > a:hover{
+    background-color: #4c6c01;
+}
+
+#aktivitas-mesjid img{
+    object-fit: cover;
+}
+
+.subbab {
+color: #ffffff;
+font-family: "Open Sans Condensed";
+font-size: 5vh;
+font-weight: 700;
+text-align: center;
+letter-spacing: 1px;
+padding: 2% 0;
+margin: 0;
+}
+/* Laporan Keuangan */
+#laporan-mesjid > .keuangan-list{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    
+}
+
+.keuangan-list > .item-keuangan {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    background-color: #6f9419;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 15px;
+}
+
+.item-keuangan > h3 {
+    margin: 0;
+}
+
+/* Section Layanan Mesjid */
 #layanan-mesjid {
     background-color: #6f9419;
 }
@@ -244,7 +293,10 @@ margin: 0;
     padding: 2%;
 }
 
-.flex-layanan > .layanan-item {
+.flex-layanan .layanan-item,
+.flex-layanan > a {
+    text-decoration: none;
+    color: inherit;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -254,18 +306,85 @@ margin: 0;
     border-radius: 15px;
 }
 
-.layanan-item > i {
+.flex-layanan .layanan-item {
+    position: relative;
+    transition: box-shadow ease 0.5s, transform ease 0.5s;
+}
+
+.flex-layanan .layanan-item::after {
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.45);
+    transition: opacity ease 0.5s;
+}
+
+.flex-layanan .layanan-item:hover{
+    transform: translateY(-10px);
+  }
+
+.flex-layanan .layanan-item:hover::after {
+    opacity: 1;
+}
+
+.layanan-item-content > i {
     font-size: 48px;
 }
 
+/* Infaq Page */
+.kontak-infaq {
+    list-style: none;
+    background-color: #6f9419;
+    padding: 2% 5%;
+    border-radius: 12px;
+}
+
+.info-infaq div{
+    text-align: center;
+    font-size: x-large;
+}
+
+.info-infaq ul {
+    display: inline-block;
+    text-align: left;
+}
+
+/* Section Kontak */
 .flex-kontak {
     display: flex;
+    margin: 2%;
 }
 
 .flex-kontak > div:nth-of-type(1) {
     flex-basis: 70%;
 }
 
+.list-kontak{
+    font-size: x-large;
+}
+
+.list-kontak > li {
+    list-style-type: none;
+    padding: 1%;
+}
+
+.peta-kontak {
+    width: 80%; max-width: 600px; height: 100%; margin: 0 auto;
+}
+
+.h_iframe {
+    position: relative;
+    padding-top: 70%;
+}
+
+.h_iframe iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/* Section Footer */
 #website-footer {
     display: flex;
     color: white;
@@ -308,6 +427,10 @@ margin: 0;
     color: inherit;
 }
 
+#footer-quick-links > a:hover {
+    text-decoration-line: underline;
+}
+
 
 #footer-contacts {
     width: 30%;
@@ -345,7 +468,31 @@ margin: 0;
     color: inherit;
 }
 
+#footer-contacts span:hover {
+    color: #8DB433;
+}
+
 @media only screen and (max-width: 414px){ /*iPhone 6/7/8 */
+    .h-kontak {
+        background-image: url(img/header_kontak.jpg);
+    }
+
+    .h-index {
+        background-image: url(img/pic_header_edit.jpg);
+    }
+    
+    .h-tentang {
+        background-image: url(img/header_tentang.jpg);
+    }
+    
+    .h-murrotalkajian {
+        background-image: url(img/mesjid_ramadhan.jpg);
+    }
+    
+    .h-ukhuwah {
+        background-image: linear-gradient(180deg, rgb(68, 68, 68) 0%, rgb(83, 83, 83) 70%), url(img/mesjid_berbuka.JPG);
+    }
+    
     #header-texts {
         font-size: 2vh;
         bottom: 2vh;
@@ -372,6 +519,27 @@ margin: 0;
         padding: 0.5vh 3vh;
     }
 
+    .subbab {
+        font-size: 3vh;
+    }
+
+    .flex-layanan {
+        flex-direction: column;
+    }
+
+    .flex-layanan > .layanan-item {
+        margin: 2vh;
+    }
+
+    .flex-kontak {
+        flex-direction: column;
+    }
+
+    .h_iframe {
+        position: relative; 
+        padding-top: 90%;
+    }
+
     .website-deskripsi{
         flex-direction: column;
         flex-wrap: wrap;
@@ -383,13 +551,26 @@ margin: 0;
         padding: 5% 0;
     }
 
-    #aktivitas-mesjid{
+    #deskripsi-mesjid p {
+        font-size: 1.8vh;
+    }
+
+    #aktivitas-mesjid {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
         flex-wrap: wrap;
         background-color: #6f9419;
         border-radius: 20px;
+    }
+
+    #laporan-mesjid > .keuangan-list {
+        flex-direction: column;
+    }
+
+    .keuangan-list > .item-keuangan {
+        margin: 5%;
+        padding: 2%;
     }
     
     .website-imagesandcaption{
